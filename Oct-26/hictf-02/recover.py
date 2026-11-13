@@ -1,0 +1,246 @@
+def detect_dbg():
+    return False
+def load_input(i):
+    return i
+def drop():
+    return 0
+def pop():
+    return 0
+def push():
+    return 1
+def run():
+    mem = []
+    if detect_dbg():
+        return 0
+    load_input(0)
+    drop()
+    mem[0] = pop()
+    "load_input" : 1
+    "push_imm" : 0
+    or
+    "store" : 1
+    "load_input" : 2
+    "push_imm" : 0
+    swap
+    or
+    "store" : 2
+    "load_input" : 3
+    "push_imm" : 0
+    sub
+    "__ROL4__" : 8
+    "__ROL4__" : 24
+    "store" : 3
+    "jmp" : load_input
+    halt
+    "load_input" : 5
+    "load_input" : 6
+    xor
+    "push_imm" : 84
+    eq
+    "jz" : halt
+    "load_input" : 9
+    "load_input" : 10
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 164
+    eq
+    "jz" : halt
+    "load_input" : 10
+    "load_input" : 11
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 190
+    eq
+    "jz" : halt
+    "load_input" : 12
+    "load_input" : 13
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 159
+    eq
+    "jz" : halt
+    "load_input" : 13
+    "load_input" : 14
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 153
+    eq
+    "jz" : halt
+    "load_input" : 14
+    "load_input" : 15
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 148
+    eq
+    "jz" : halt
+    "load_input" : 16
+    "load_input" : 17
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 148
+    eq
+    "jz" : halt
+    "load_input" : 17
+    "load_input" : 18
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 154
+    eq
+    "jz" : halt
+    "load_input" : 18
+    "load_input" : 19
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 155
+    eq
+    "jz" : halt
+    "load_input" : 19
+    "load_input" : 20
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 153
+    eq
+    "jz" : halt
+    "load_input" : 20
+    "load_input" : 21
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 154
+    eq
+    "jz" : halt
+    "load_input" : 22
+    "load_input" : 23
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 150
+    eq
+    "jz" : halt
+    "load_input" : 23
+    "push_mem" : 0
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 177
+    eq
+    "jz" : halt
+    "push_mem" : 3
+    "load_input" : 15
+    mul
+    "push_imm" : 255
+    and
+    "push_imm" : 67
+    eq
+    "jz" : halt
+    "load_input" : 7
+    "load_input" : 21
+    mul
+    "push_imm" : 255
+    and
+    "push_imm" : 236
+    eq
+    "jz" : halt
+    "load_input" : 11
+    "load_input" : 19
+    mul
+    "push_imm" : 255
+    and
+    "push_imm" : 83
+    eq
+    "jz" : halt
+    "push_mem" : 0
+    "load_input" : 8
+    xor
+    "load_input" : 16
+    xor
+    "push_imm" : 33
+    eq
+    "jz" : halt
+    "load_input" : 4
+    "load_input" : 12
+    xor
+    "load_input" : 20
+    xor
+    "push_imm" : 65
+    eq
+    "jz" : halt
+    "push_mem" : 2
+    "load_input" : 10
+    xor
+    "load_input" : 18
+    xor
+    "push_imm" : 54
+    eq
+    "jz" : halt
+    "push_mem" : 0
+    "load_input" : 4
+    add
+    "load_input" : 8
+    add
+    "load_input" : 12
+    add
+    "load_input" : 16
+    add
+    "load_input" : 20
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 154
+    eq
+    "jz" : halt
+    "push_mem" : 1
+    "load_input" : 5
+    xor
+    "load_input" : 9
+    xor
+    "load_input" : 13
+    xor
+    "load_input" : 17
+    xor
+    "load_input" : 21
+    xor
+    "push_imm" : 86
+    eq
+    "jz" : halt
+    "push_mem" : 2
+    "load_input" : 7
+    add
+    "load_input" : 10
+    add
+    "load_input" : 15
+    add
+    "load_input" : 18
+    add
+    "load_input" : 23
+    add
+    "push_imm" : 255
+    and
+    "push_imm" : 1
+    eq
+    "jz" : halt
+    "push_mem" : 3
+    "load_input" : 6
+    xor
+    "load_input" : 11
+    xor
+    "load_input" : 14
+    xor
+    "load_input" : 19
+    xor
+    "load_input" : 22
+    xor
+    "push_imm" : 119
+    eq
+    "jz" : halt
+    correct
+    stop
